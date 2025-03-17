@@ -1,0 +1,40 @@
+modLoader="kotlinforforge"
+loaderVersion="${kffRange}"
+
+license="${license}"
+
+issueTrackerURL="${issuesUrl}"
+
+[[mods]]
+modId="${modId}"
+version="${modVer}"
+displayName="${modName}"
+displayURL="${homepageUrl}"
+authors="${authors}"
+description='''${modDesc}'''
+#logoFile="examplemod.png"
+# REMINDER: https://docs.neoforged.net/docs/misc/updatechecker/ exists and should be used if desired
+
+[[mixins]]
+config="${modId}.mixins.json"
+
+[[accessTransformers]]
+file="META-INF/accesstransformer.cfg"
+
+# REMINDER: valid types are: "required", "optional", "incompatible" or "discouraged"
+# REMINDER: dependencies can have a "reason"="some reason" field
+# REMINDER: ordering is "BEFORE" or "AFTER"
+# REMINDER: side is "BOTH", "CLIENT", or "SERVER"
+[[dependencies.${modId}]]
+    modId="neoforge"
+    type="required"
+    versionRange="${neoRange}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${modId}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraftRange}"
+    ordering="NONE"
+    side="BOTH"
