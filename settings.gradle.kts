@@ -10,5 +10,4 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
 }
 
-// TODO: TEMPLATE: Change
-rootProject.name = "NeoforgeTemplate"
+rootProject.name = "ClassicBlunders"

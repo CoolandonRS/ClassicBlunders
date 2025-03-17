@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.stultorum.mods.template.mixins",
+  "package": "com.stultorum.mods.blunders.mixins",
   "compatibilityLevel": "JAVA_21",
   "mixins": [],
   "server": [],
